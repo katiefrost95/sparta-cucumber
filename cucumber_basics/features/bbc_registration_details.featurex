@@ -1,0 +1,8 @@
+Feature: BBC Register Details
+
+  Scenario: Inputting correct registration details to successfully make new account
+    Given I access the bbc register details page
+    And I input correct date of birth
+    And I input correct registration details
+    When I click register
+    Then I should successfully sign in to my account
