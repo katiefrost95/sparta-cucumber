@@ -1,0 +1,9 @@
+Feature: BBC Register
+
+  Scenario: Inputting correct date of birth to register
+    Given I access the bbc register page
+    And I input correct day of birth
+    And I input correct month of birth
+    And I input correct year of birth
+    When I click continue
+    Then I should successfully move to registration details page
